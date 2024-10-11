@@ -24,11 +24,14 @@ list_of_files = [
     "params.yaml",
     "requirements.txt",
     "setup.py",
-    "notebooks/EDA.ipynb",               # For exploratory data analysis
-    "notebooks/model_training.ipynb",    # For model training
-    "notebooks/recommendation.ipynb",    # For making recommendations
-    "templates/index.html"               # Optional: For any front-end usage
+    "notebooks/EDA.ipynb",
+    "notebooks/model_training.ipynb",
+    "notebooks/recommendation.ipynb",
+    "templates/index.html",
+    "data/raw/.gitkeep",  # For storing raw dataset files
+    "data/processed/.gitkeep"  # For storing processed datasets
 ]
+
 
 # Create directories and files
 for filepath in list_of_files:
