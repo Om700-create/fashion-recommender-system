@@ -6,4 +6,7 @@ scikit-learn
 xgboost
 Flask
 dill
+lightgbm
+tensorflow
+scipy
 -e .
