@@ -1,6 +1,6 @@
 from flask import Flask, render_template
-from fashion_recommendation_system.pipeline.pipeline import run_pipeline
-from fashion_recommendation_system.utils.common import load_config
+from src.fashion_recommendation_system.pipeline.pipeline import run_pipeline
+from src.fashion_recommendation_system.utils.common import load_config
 
 app = Flask(__name__)
 
