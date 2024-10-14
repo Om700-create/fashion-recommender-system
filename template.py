@@ -13,25 +13,29 @@ list_of_files = [
     ".github/workflows/.gitkeep",
     f"src/{project_name}/__init__.py",
     f"src/{project_name}/components/__init__.py",
+    f"src/{project_name}/components/model_training.py",
+    f"src/{project_name}/components/recommendation.py",
     f"src/{project_name}/utils/__init__.py",
     f"src/{project_name}/config/__init__.py",
     f"src/{project_name}/config/configuration.py",
     f"src/{project_name}/pipeline/__init__.py",
+    f"src/{project_name}/pipeline/pipeline.py",
     f"src/{project_name}/entity/__init__.py",
     f"src/{project_name}/constants/__init__.py",
     "config/config.yaml",
-    "dvc.yaml",
-    "params.yaml",
-    "requirements.txt",
-    "setup.py",
-    "notebooks/EDA.ipynb",
-    "notebooks/model_training.ipynb",
-    "notebooks/recommendation.ipynb",
-    "templates/index.html",
+    "models/.gitkeep",  # Directory for saved models (RF, PCA, SVD)
+    "data/fashion_mnist.csv",  # Dataset placeholder
+    "templates/index.html",  # HTML template for UI
+    "notebooks/EDA.ipynb",  # Notebook for Exploratory Data Analysis
+    "notebooks/model_training.ipynb",  # Notebook for model training
+    "notebooks/recommendation.ipynb",  # Notebook for recommendations
+    "dvc.yaml",  # Data version control file
+    "params.yaml",  # Parameters for experiments
+    "requirements.txt",  # Dependencies
+    "setup.py",  # Project setup script
     "data/raw/.gitkeep",  # For storing raw dataset files
     "data/processed/.gitkeep"  # For storing processed datasets
 ]
-
 
 # Create directories and files
 for filepath in list_of_files:
